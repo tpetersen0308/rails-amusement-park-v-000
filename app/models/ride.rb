@@ -12,6 +12,7 @@ class Ride < ActiveRecord::Base
       self.nauseate_user
       self.please_user
       self.user.save
+      "Thanks for riding the #{self.attraction.name}!"
     end
   end
 
